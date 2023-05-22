@@ -1,6 +1,6 @@
 {
   "name": "octet-sdn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "一种面向字节流的结构化数据表示法（Structured Data Notation）",
   "type": "module",
   "main": "./dist/index.js",
