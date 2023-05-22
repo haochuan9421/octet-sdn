@@ -1,4 +1,4 @@
-import { concat } from "async-iterable-split";
+import { concat, asyncConcat } from "async-iterable-split";
 import { TYPES } from "./constants.js";
 
 // 用于定长的数据
@@ -284,4 +284,12 @@ export function multiGenerator(values: any[]): AsyncIterable<Uint8Array> {
       };
     },
   };
+}
+
+export function easyGenerator(value: any, maxSize: number): Promise<Uint8Array> {
+  return asyncConcat(generator(value), maxSize);
+}
+
+export function easyMultiGenerator(values: any[], maxSize: number): Promise<Uint8Array> {
+  return asyncConcat(multiGenerator(values), maxSize);
 }
