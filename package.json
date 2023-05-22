@@ -1,0 +1,31 @@
+{
+  "name": "octet-sdn",
+  "version": "1.0.0",
+  "description": "一种面向字节流的结构化数据表示法（Structured Data Notation）",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "link": "ln -s ../ ./node_modules/octet-sdn",
+    "test": "node test/index.js"
+  },
+  "files": [
+    "./dist"
+  ],
+  "keywords": [
+    "octet",
+    "sdn"
+  ],
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "author": "haochuan9421",
+  "homepage": "https://github.com/haochuan9421/octet-sdn",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "async-iterable-split": "^2.0.3"
+  }
+}

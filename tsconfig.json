@@ -1,0 +1,14 @@
+{
+  "include": [
+    "src/**/*.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ES2018",
+    "module": "ES6",
+    "moduleResolution": "nodenext",
+    "declaration": true,
+    "strict": true,
+    "removeComments": true,
+  },
+}
